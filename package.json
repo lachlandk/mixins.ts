@@ -1,0 +1,29 @@
+{
+  "name": "@lachlandk/mixins",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/mixins.js",
+  "module": "dist/mixins.js",
+  "types": "dist/mixins.d.ts",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "keywords": ["mixins", "mixin", "oop", "multiple inheritance", "classes", "class"],
+  "author": "Lachlan Dufort-Kennett",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "merge2": "^1.4.1",
+    "mocha": "^9.0.2",
+    "typescript": "^4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lachlandk/ts-mixins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lachlandk/ts-mixins/issues"
+  },
+  "homepage": "https://github.com/lachlandk/ts-mixins#readme"
+}
