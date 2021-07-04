@@ -1,0 +1,13 @@
+# Intellij IDE Settings
+/.idea
+
+# Development
+gulpfile.js
+tsconfig.json
+/src
+
+# Testing
+/tests
+
+# Git
+.gitignore
