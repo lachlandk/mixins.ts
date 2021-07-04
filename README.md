@@ -1,6 +1,6 @@
 # ts-mixins
 A small library created to offer syntactic sugar for [mixin](https://en.wikipedia.org/wiki/Mixin) patterns in Typescript.
-Based off examples from [This blog post](https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/).
+Based off examples from [this blog post](https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/).
 ```shell
 npm install @lachlandk/mixins
 ```
