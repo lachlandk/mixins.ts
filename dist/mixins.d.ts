@@ -1,6 +1,5 @@
-export declare type constructor<T = {}> = new (...args: any[]) => T;
-export declare type mixin = (superclass: constructor) => constructor;
-export declare const mix: (superclass: constructor) => {
-    superclass: constructor;
-    with(...mixins: (mixin | ((superclass: unknown) => unknown))[]): constructor;
+export declare type Constructor<T = {}> = new (...args: any[]) => T;
+export declare const mix: <superType extends Constructor<{}>>(superclass: superType) => {
+    superclass: superType;
+    with<mixinType extends Constructor<{}>>(mixin: (superclass: superType) => mixinType & superType): mixinType & superType;
 };
