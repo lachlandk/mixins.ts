@@ -9,7 +9,14 @@
   "scripts": {
     "test": "mocha tests"
   },
-  "keywords": ["mixins", "mixin", "oop", "multiple inheritance", "classes", "class"],
+  "keywords": [
+    "mixins",
+    "mixin",
+    "oop",
+    "multiple inheritance",
+    "classes",
+    "class"
+  ],
   "author": "Lachlan Dufort-Kennett",
   "license": "ISC",
   "devDependencies": {
