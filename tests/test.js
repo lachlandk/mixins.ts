@@ -1,6 +1,6 @@
-const mixins = require("../dist/mixins");
-const {suite, test} = require("mocha");
-const assert = require("assert");
+import { mix } from "../dist/mixins.js";
+import { suite, test } from "mocha";
+import assert from "assert";
 
 suite("Testing mix().with()", function() {
 	class BaseClass {
@@ -12,21 +12,21 @@ suite("Testing mix().with()", function() {
 
 	const Mixin1 = superclass => class extends superclass {
 		b;
-		constructor() {
-			super();
+		constructor(...args) {
+			super(...args);
 			this.b = "b";
 		}
 	};
 
 	const Mixin2 = superclass => class extends superclass {
 		c;
-		constructor() {
-			super();
+		constructor(...args) {
+			super(...args);
 			this.c = "c";
 		}
 	};
 
-	class SubClass extends mixins.mix(BaseClass).with(Mixin1, Mixin2) {
+	class SubClass extends mix(mix(BaseClass).with(Mixin1)).with(Mixin2) {
 		constructor() {
 			super();
 		}
