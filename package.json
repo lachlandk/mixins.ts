@@ -18,7 +18,7 @@
     "class"
   ],
   "author": "Lachlan Dufort-Kennett",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-typescript": "^6.0.0-alpha.1",
