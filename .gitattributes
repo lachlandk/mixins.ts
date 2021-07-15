@@ -2,3 +2,4 @@
 * text=auto
 
 /tests -linguist-detectable
+gulpfile.js -linguist-detectable
