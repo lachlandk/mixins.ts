@@ -28,10 +28,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lachlandk/ts-mixins.git"
+    "url": "git+https://github.com/lachlandk/mixins.ts.git"
   },
   "bugs": {
-    "url": "https://github.com/lachlandk/ts-mixins/issues"
+    "url": "https://github.com/lachlandk/mixins.ts/issues"
   },
-  "homepage": "https://github.com/lachlandk/ts-mixins#readme"
+  "homepage": "https://github.com/lachlandk/mixins.ts#readme"
 }

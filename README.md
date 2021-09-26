@@ -1,4 +1,4 @@
-# ts-mixins
+# mixins.ts
 A small library created to offer syntactic sugar for [mixin](https://en.wikipedia.org/wiki/Mixin) patterns in Typescript.
 Based off examples from [this blog post](https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/), with assistance from comments in [this GitHub issue](https://github.com/Microsoft/TypeScript/pull/13743#issuecomment-277607201).
 ```shell
