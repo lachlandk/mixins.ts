@@ -1,21 +1,21 @@
-const gulp = require("gulp");
-const typescript = require("gulp-typescript");
-const merge = require("merge2");
+import gulp from "gulp";
+import typescriptGulp from "gulp-typescript";
+import merge from "merge2";
 
-const project = typescript.createProject("tsconfig.json");
-
-function build() {
-	const result = gulp.src("src/*.ts")
-		.pipe(project())
+function buildES() {
+	const result = gulp.src("src/**/*.ts")
+		.pipe(typescriptGulp.createProject("tsconfig.json", {
+			declaration: true
+		})());
 	return merge([
 		result.dts.pipe(gulp.dest("dist")),
 		result.js.pipe(gulp.dest("dist"))
 	]);
 }
 
-function watch() {
-	return gulp.watch("src/*.ts", build)
+function watchES() {
+	return gulp.watch("src/*.ts", buildES);
 }
 
-exports.build = build;
-exports.watch = watch;
+export const build = buildES;
+export const watch = watchES;
